@@ -179,7 +179,7 @@
     \AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{background.pdf}}
     \begin{minipage}[b][\paperheight]{\textwidth}
     \vspace*{5mm}
-    \includegraphics[height=20mm]{logo}\par
+    \includegraphics[height=15mm]{logo}\par
     \vspace*{5mm}
     \ifx\insertsubtitle\@empty%
     \else%
@@ -361,13 +361,13 @@
 % Images
 %---------------------------------------------------------------------
 
-\tikzset{
-  double arrow/.style args={#1 colored by #2 and #3}{
-    -stealth,line width=#1,#2, % first arrow
-    postaction={draw,-stealth,#3,line width=(#1)/3,
-                shorten <=(#1)/3,shorten >=2*(#1)/3}, % second arrow
-  }
-}
+%\tikzset{
+%  double arrow/.style args={#1 colored by #2 and #3}{
+%    -stealth,line width=#1,#2, % first arrow
+%    postaction={draw,-stealth,#3,line width=(#1)/3,
+%                shorten <=(#1)/3,shorten >=2*(#1)/3}, % second arrow
+%  }
+%}
 
 \newbox\mytempbox
 \newdimen\mytempdimen
@@ -380,15 +380,16 @@
 
 \pgfkeys{
     /background/.is family, /background,
-    default/.style = {scale = 1.0,color=white,caption=\empty},
+    default/.style = {scale = 1.0,color=white,caption=\empty,page=1},
     scale/.estore in = \bgScale,
     color/.estore in = \bgColor,
     caption/.estore in = \bgCaption,
+    page/.estore in = \bgPage,
 }
 
 \newcommand\badge[1]{%
     \begin{tikzpicture}[remember picture,overlay]%
-        \node [xshift=-1cm,yshift=-1.4cm] at (current page.north east){\includegraphics[width=2cm,height=2cm,keepaspectratio]{#1}};%
+        \node [xshift=-1.4cm,yshift=-1.8cm] at (current page.north east){\includegraphics[width=2cm,height=2cm,keepaspectratio]{#1}};%
     \end{tikzpicture}%
 }
 
