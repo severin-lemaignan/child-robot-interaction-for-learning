@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="67.41478"
-   height="30.595335"
+   width="594"
+   height="594"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="europe_epfl.svg">
+   sodipodi:docname="epfl.svg">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -53,9 +53,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="2.1577143"
-     inkscape:cx="-106.29128"
-     inkscape:cy="34.323194"
+     inkscape:zoom="1.0788572"
+     inkscape:cx="-162.97036"
+     inkscape:cy="147.93714"
      inkscape:window-x="0"
      inkscape:window-y="49"
      inkscape:window-maximized="1"
@@ -69,13 +69,13 @@
      id="title4">Europe Map Blue</title>
   <g
      id="g6"
-     transform="translate(-129.21936,-575.87778)">
+     transform="translate(-129.21936,-12.473115)">
     <title
        id="title8">Layer 1</title>
     <g
        id="layer1">
       <g
-         transform="matrix(0.84836276,0,0,0.84836276,220.35874,3.5142879)"
+         transform="matrix(7.4620794,0,0,7.4620794,930.86852,-4877.0678)"
          id="layer1-7"
          inkscape:label="Layer 1">
         <g

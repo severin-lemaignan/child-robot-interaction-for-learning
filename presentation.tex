@@ -102,7 +102,32 @@
 
 \licenseframe{github.com/severin-lemaignan/l2tor-symposium2018-technical-challenges-cri}
 
-\imageframe[color=black]{robots-classroom}
+
+\begin{frame}[plain]
+
+    Quick poll:
+    
+    \begin{center}
+        \Large {\bf
+    What is the greatest challenge that ``child-robot interaction
+        for learning'' faces today?}
+    \end{center}
+
+    \pause
+
+    Getting our robots accepted \& used in schools, without us being
+    around...?
+\end{frame}
+
+\imageframe[color=black,caption={Classrooms are scary!}]{robots-classroom}
+
+\imageframe[color=black,caption={open, underspecified situations\par
+complex~social~dynamics\par rich~semantics\par
+interplay~of~socio-cognitive~functions\par
+(and~ideally,~a~bit~of~actual~learning)}]{robots-classroom}
+
+
+\imageframe[color=black,caption=Let's frame it bit]{robots-classroom}
 \imageframe[color=black]{cri-focus-child-robot}
 \imageframe[color=black]{cri-focus-child-robot-teacher}
 \imageframe[color=black]{robots-classroom}
@@ -115,65 +140,60 @@
 \imageframe{interactions-ccrtgc}
 
 
-\section{What challenges are we talking about, exactly?}
-
-\imageframe[color=black,caption={open, underspecified situations\par
-complex~social~dynamics\par rich~semantics\par
-interplay~of~socio-cognitive~functions}]{robots-classroom}
-
-
-{
-\paper{Baxter, Lemaignan, Trafton {\bf Workshop on Cognitive Architectures for Social HRI} -- HRI 2016}
-\begin{frame}<5>{Surface functions for Social Cognition}
-\centering
-        \resizebox{!}{0.7\paperheight}{%
-            \begin{tikzpicture}[
-                    >=latex,
-                every edge/.style={<-, draw, very thick}]
-        
-
-            \path[small mindmap, 
-                level 1 concept/.append style={sibling angle=360/6}, 
-                level 2 concept/.append style={sibling angle=60}, 
-            concept color=white,text=hriWarmGreyDark]
-            node[concept, visible on=<1-5>] {\bf Social\\Cognition in HRI}
-            [clockwise from=30]
-            child[concept color=hriSec1,text=white] { node[concept] (percept) {Perception of Human's State}
-                [clockwise from=120]
-                child[concept color=hriSec3Dark,text=white] { node[concept]
-                (emotions) {Empathy Emotions} }
-                child[concept color=hriSec2Dark,text=white] { node[concept] (attention) {Attention} }
-                child[concept color=hriSec2CompDark,text=white] { node[concept] (mmodel) {Inference of mental models} };
-            }
-            child[concept color=hriSec2Comp,text=white,grow=-45, visible on=<2->] { node[concept] (knowledge) {Social Knowledge} 
-                [counterclockwise from=-140]
-                child[concept color=hriSec1CompDark,text=white] { node[concept] (soc-rules) {Social rules} }
-                child[concept color=hriSec3Comp,text=black] { node[concept] (soc-ctxt) {Social context} }
-                child[concept color=hriSec2Dark,text=white] { node[concept] (memory) {Social memory} }
-                child[concept color=hriSec3CompDark,text=white] { node[concept] (common-sense) {Common-sense} };
-            }
-            child[concept color=hriSec3Comp,text=black, grow=-120,visible on=<3->] { node[concept] (comm) {Communication} 
-                [counterclockwise from=180]
-                child[concept color=hriSec1CompDark,text=white] { node[concept] (dialog) {Verbal} }
-                child[concept color=hriSec1Dark,text=white] { node[concept] (non-verbal) {Non-verbal} };
-            }
-            child[concept color=hriSec3,text=white,grow=180,visible on=<4->] { node[concept] (dynamics) {Interaction Dynamics} 
-                [clockwise from=180]
-                child[concept color=hriSec2Dark,text=white] { node[concept] (long-term) {Long-term interaction} };
-            }
-            child[concept color=hriSec2,text=black, grow=120,visible on=<5->] { node[concept] (action) {Performing with humans} 
-                [counterclockwise from=80]
-                child[concept color=hriSec2CompDark,text=white] { node[concept] {Action, behaviour recognition} }
-                child[concept color=hriSec1Dark,text=white] { node[concept] {Intention reading} }
-                child[concept color=hriSec3,text=white] { node[concept] (joint-action) {Joint actions} };
-            };
-
-
-        \end{tikzpicture}
-    }
-    \badge{plym}
-\end{frame}
-}
+%\section{What challenges are we talking about, exactly?}
+%
+%{
+%\paper{Baxter, Lemaignan, Trafton {\bf Workshop on Cognitive Architectures for Social HRI} -- HRI 2016}
+%\begin{frame}<5>{Surface functions for Social Cognition}
+%\centering
+%        \resizebox{!}{0.7\paperheight}{%
+%            \begin{tikzpicture}[
+%                    >=latex,
+%                every edge/.style={<-, draw, very thick}]
+%        
+%
+%            \path[small mindmap, 
+%                level 1 concept/.append style={sibling angle=360/6}, 
+%                level 2 concept/.append style={sibling angle=60}, 
+%            concept color=white,text=hriWarmGreyDark]
+%            node[concept, visible on=<1-5>] {\bf Social\\Cognition in HRI}
+%            [clockwise from=30]
+%            child[concept color=hriSec1,text=white] { node[concept] (percept) {Perception of Human's State}
+%                [clockwise from=120]
+%                child[concept color=hriSec3Dark,text=white] { node[concept]
+%                (emotions) {Empathy Emotions} }
+%                child[concept color=hriSec2Dark,text=white] { node[concept] (attention) {Attention} }
+%                child[concept color=hriSec2CompDark,text=white] { node[concept] (mmodel) {Inference of mental models} };
+%            }
+%            child[concept color=hriSec2Comp,text=white,grow=-45, visible on=<2->] { node[concept] (knowledge) {Social Knowledge} 
+%                [counterclockwise from=-140]
+%                child[concept color=hriSec1CompDark,text=white] { node[concept] (soc-rules) {Social rules} }
+%                child[concept color=hriSec3Comp,text=black] { node[concept] (soc-ctxt) {Social context} }
+%                child[concept color=hriSec2Dark,text=white] { node[concept] (memory) {Social memory} }
+%                child[concept color=hriSec3CompDark,text=white] { node[concept] (common-sense) {Common-sense} };
+%            }
+%            child[concept color=hriSec3Comp,text=black, grow=-120,visible on=<3->] { node[concept] (comm) {Communication} 
+%                [counterclockwise from=180]
+%                child[concept color=hriSec1CompDark,text=white] { node[concept] (dialog) {Verbal} }
+%                child[concept color=hriSec1Dark,text=white] { node[concept] (non-verbal) {Non-verbal} };
+%            }
+%            child[concept color=hriSec3,text=white,grow=180,visible on=<4->] { node[concept] (dynamics) {Interaction Dynamics} 
+%                [clockwise from=180]
+%                child[concept color=hriSec2Dark,text=white] { node[concept] (long-term) {Long-term interaction} };
+%            }
+%            child[concept color=hriSec2,text=black, grow=120,visible on=<5->] { node[concept] (action) {Performing with humans} 
+%                [counterclockwise from=80]
+%                child[concept color=hriSec2CompDark,text=white] { node[concept] {Action, behaviour recognition} }
+%                child[concept color=hriSec1Dark,text=white] { node[concept] {Intention reading} }
+%                child[concept color=hriSec3,text=white] { node[concept] (joint-action) {Joint actions} };
+%            };
+%
+%
+%        \end{tikzpicture}
+%    }
+%    \badge{plym}
+%\end{frame}
+%}
 
 
 \section{The classroom}
@@ -187,7 +207,7 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
- \imageframe{cellulo/pencil}
+ \imageframe[color=black]{cellulo/pencil}
 
  \begin{frame}{Why that?}
 
@@ -198,14 +218,14 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
              affective bonding), intuitive (\ie few simple affordances)
 
          \item<2-> {\bf versatile}: applicable to a broad range of learning
-             scenarios; the good tool is not overly specialised (appearance and
+             scenarios; good tools are not overly specialised (appearance and
              interaction modalities do not imply or force a specific/unique use
              case)
 
-         \item<3-> {\bf practical}: to gain field
-             acceptance in the classrooms, a tool must critically
+         \item<3-> {\bf practical}: to gain broad
+             acceptance in a classroom, a tool must critically
              represent a net educative gain and must not incur higher
-             workload for the teachers
+             workload for the teacher
      \end{itemize}
  \end{frame}
 
@@ -215,29 +235,16 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
 
 
 
-\section[Social robots?]{Do we need social robots at all?}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Social or not Social?}
-     \begin{center}
-         \resizebox{\linewidth}{!}{
-             \begin{tikzpicture}[>=latex]
-                 \node[double arrow,draw] (spec) {Interaction spectrum};
-                 \node<1>[minimum size=3cm,left=of spec] {Non-social};
-                 \node<2>[minimum size=3cm,left=of spec] {Tool?};
-                 \node<3>[minimum size=3cm,left=of spec] {\bf Cellulo};
-                 \node<1>[minimum size=3cm,right=of spec] {Social};
-                 \node<2>[minimum size=3cm,right=of spec] {Peer/tutor?};
-                 \node<3>[minimum size=3cm,right=of spec] {\bf CoWriter};
-             \end{tikzpicture}
-         }
-     \end{center}
+\begin{frame}[plain]
+    \Large\bf\centering
+%Do we need social robots at all?
+    What does it look like to build a pen-like robot?
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \imageframe[caption=Cellulo]{cellulo/classroom-withcellulo}
+ \imageframe{cellulo/classroom}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -262,9 +269,11 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
              workload for the teachers
      \end{itemize}
 
-        \badge{epfl}
+        \badge{ayberk-epfl}
  \end{frame}
 }
+
+ \imageframe{cellulo/classroom-withcellulo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -273,13 +282,13 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
          \includegraphics[width=0.8\linewidth]{cellulo/hardware-design}
      \end{center}
      \begin{itemize}
-         \item Holomonic motion
+         \item Holonomic motion
          \item Sub-mm absolute localisation (no external hardware)
          \item Haptic feedback + tactile RGB LED buttons 
          \item Bluetooth
          \item<2> Affordable (prototype: \EUR125)
      \end{itemize}
-        \badge{epfl}
+        \badge{ayberk-epfl}
  \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -292,7 +301,7 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
     \paper{Hostettler, \"Ozg\"ur, Lemaignan et al. {\bf Real-Time High-Accuracy
     2D Localization with Structured Patterns} -- ICRA 2016}
  \begin{frame}{Interaction with the paper}
-     \badge{epfl}
+     \badge{ayberk-epfl}
      Critically, Cellulo is meant as an {\bf interaction between
      (classroom-friendly) paper and the robots}.
 
@@ -327,35 +336,163 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
  \imageframe[color=black,caption=Concept 2: solar system]{cellulo/concept-solar-system}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{
-    \paper{\"Ozg\"ur, Lemaignan et al. {\bf Cellulo: Versatile Handheld Robots
-    for Education} -- HRI 2017}
- \begin{frame}{Interaction Design space}
-     \begin{center}
-         \includegraphics[width=0.8\linewidth]{cellulo/interaction-space}
-     \end{center}
-        \badge{epfl}
- \end{frame}
- }
-
+%
+%{
+%    \paper{\"Ozg\"ur, Lemaignan et al. {\bf Cellulo: Versatile Handheld Robots
+%    for Education} -- HRI 2017}
+% \begin{frame}{Interaction Design space}
+%     \begin{center}
+%         \includegraphics[width=0.8\linewidth]{cellulo/interaction-space}
+%     \end{center}
+%        \badge{ayberk-epfl}
+% \end{frame}
+% }
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  \begin{frame}[plain]{}
-     ...at the other end of the spectrum...
+
+     \centering
+    If a ``pen-like'' robot is actually doable...
+
+     \pause
+
+     \Large\bf
+     ...are social robots relevant at all...?
  \end{frame}
+
+ \imageframe[color=black, caption={Yes, maybe...!}]{cowriter/social-learning}
+%
+%\begin{frame}[label=cowriter-impl]{Technical Challenges}
+%    \badge{epfl}
+%    \begin{itemize}
+%        \item<1-> Get a child-proof robot to write...
+%        \item<2-> ...badly...
+%        \item<3-> Make it able to learn...
+%        \item<4-> ...with the help of children
+%    \end{itemize}
+%\end{frame}
+
+\section{The teacher}
+
+\begin{frame}[plain]
+
+    \Large
+    Beyond the question of the practical integration of robots into the
+    classroom, how to address the \textbf{tension between robot autonomy and teacher
+    control}?
+
+
+\end{frame}
+
+
+{
+    \fullbackground[scale=0.9]{sparc/sparc}
+\begin{frame}[plain]
+    \badge{emmanuel}
+\end{frame}
+}
+
+\imageframe[caption={Interactive Reinforcement Learning \newline Small state
+space; $| action\_space | = 5$}, color=black]{sparc/sophies}
+
+\begin{frame}{...well, well...}
+    Can we tackle much more complicated cases?
+    \begin{itemize}
+        \item<+-> real robot?
+        \item<+-> real interaction (...with a human!)?
+        \item<+-> continuous interaction?
+        \item<+-> more realistic task (state vector \& action space)?
+        \item<+-> also including social behaviours \& social dynamics?
+    \end{itemize}
+
+    \badge{emmanuel}
+\end{frame}
+
+\imageframe[color=black]{sparc/foodchain-game}
+\imageframe[color=black,caption={$state \in [0.;1.]^{210}$ $| action\_space| = 655$}]{sparc/gui}
+\imageframe[color=black]{sparc/overview}
+%\imageframe[color=black]{sparc/woz-gui}
+%\imageframe[caption={Overall performance (pre-, mid-, post-test)},scale=0.9]{sparc/perf}
+\imageframe[caption={Learning-related game actions}, scale=0.9]{sparc/d_eat}
+\imageframe[scale=0.9]{sparc/actions-supervised}
+\imageframe[scale=0.9]{sparc/actions}
+\imageframe[scale=0.9]{sparc/social-timing}
+
+\begin{frame}{What does that means for the teacher?}
+
+    \begin{columns}
+        \begin{column}{0.45\linewidth}
+            
+            \begin{center}
+                \includegraphics[width=0.9\linewidth]{sparc/sparc}
+            \end{center}
+        \end{column}
+        \begin{column}{0.55\linewidth}
+            \only<1>{
+            \begin{itemize}
+                \item {\bf Progressively transferring autonomy} is a general
+                    principle; it demonstrably works in non-trivial tutoring
+                    scenarios
+                \item (it also learns some elements of {\bf social behaviours} and
+                    {\bf social timing})
+            \end{itemize}
+        }
+            \only<2>{
+                Key properties:
+
+            \begin{itemize}
+                \item \textbf{progressive autonomy} yet
+                    \textbf{transparency} of the behaviour;
+                \item \textbf{observability} and possibility to \textbf{take
+                    over};
+                \item because the training takes place in-situ, the
+                    robot behaviours are \textbf{co-constructed} with the
+                    teacher and the child
+            \end{itemize}
+        }
+            \only<3>{
+                Yet:
+
+            \begin{itemize}
+                \item Design of the input state tricky and largely task
+                    dependent;
+                \item What about more complex social behaviours?
+                \item Nothing yet on group dynamics
+            \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[The children]{The children: the challenge of ``doing together''}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Social or not Social?}
+     \begin{center}
+         \resizebox{\linewidth}{!}{
+             \begin{tikzpicture}[>=latex]
+                 \node[double arrow,draw] (spec) {Interaction spectrum};
+                 \node<1>[minimum size=3cm,left=of spec] {Non-social};
+                 \node<2>[minimum size=3cm,left=of spec] {Tool?};
+                 %\node<3>[minimum size=3cm,left=of spec] {\bf Cellulo};
+                 \node<1>[minimum size=3cm,right=of spec] {Social};
+                 \node<2>[minimum size=3cm,right=of spec] {Peer/tutor?};
+                 %\node<3>[minimum size=3cm,right=of spec] {\bf CoWriter};
+             \end{tikzpicture}
+         }
+     \end{center}
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[label=cowriter-impl]{Technical Challenges}
-    \badge{epfl}
-    \begin{itemize}
-        \item<1-> Get a child-proof robot to write...
-        \item<2-> ...badly...
-        \item<3-> Make it able to learn...
-        \item<4-> ...with the help of children
-    \end{itemize}
-\end{frame}
+\imageframe[color=black]{cowriter/diego-writing}
 
 {
     \paper{Lemaignan et al. {\bf Learning by Teaching a Robot: The Case of Handwriting} -- Robotics and Automation Magazine 2016}
@@ -373,6 +510,8 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
 \end{frame}
 }
 
+\videoframe[0.56]{figs/cowriter/training-s.mp4?autostart&noaudio}
+
 {
     \paper{Hood, Lemaignan et al. {\bf When Children Teach a Robot to Write: An
     Autonomous Teachable Humanoid [...]} -- HRI 2015}
@@ -381,21 +520,12 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
     \begin{center}
     \includegraphics[width=0.8\textwidth]{cowriter/learningSdemo.png}
     \end{center}
+    \badge{deana-epfl}
 \end{frame}
 
 }
 
-{
-    \paper{Lemaignan et al. {\bf Learning by Teaching a Robot: The Case of Handwriting} -- Robotics and Automation Magazine 2016}
-\begin{frame}{Learning to draw a 5}
-    \begin{center}
-        \includegraphics[width=0.8\linewidth]{cowriter/henry5}
-    \end{center}
-    \badge{epfl}
-\end{frame}
-}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \imageframe[color=black]{cowriter/diego-correct}
 
 \begin{frame}{Before -- After}
@@ -413,56 +543,20 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
         \includegraphics[width=0.43\linewidth]{cowriter/lettre-final-highlight}
         }
     \end{center}
-        \badge{epfl}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{
-    \paper{Hood, Lemaignan et al. {\bf When Children Teach a Robot to Write: An
-    Autonomous Teachable Humanoid [...]} -- HRI 2015}
-\begin{frame}{CoWriter implementation}
-    \centering
-
-    \only<1>{
-        \video{0.9\textwidth}{figs/cowriter/nao-tablet-demo.mp4}
-    }
-
-    \only<2>{
-        \includegraphics[width=0.8\textwidth]{cowriter/pca}
-    }
-
-    \only<3>{
-        \includegraphics[width=0.8\textwidth]{cowriter/cowriter-g.png}
-    }
-
-    \only<4>{
-        \includegraphics[width=0.8\textwidth]{cowriter/learningSdemo}
-    }
-
-    \badge{epfl}
-\end{frame}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[plain]
-    \begin{center}
-        \includegraphics[width=0.8\linewidth]{cowriter/cowriter-fsm.png}
-    \end{center}
-
-    \backbutton{}
+    \badge{deana-epfl}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{What role does the robot play here?}
+    \begin{itemize}
+        \item<1-> Not a 'tool to teach robotics', not a facilitator/tutor
+        \item<2-> The robot as 'cognitive agent' is key here (Protégé effect,
+            metacognition)
+        \item<3-> (note: a tool for the teacher vs a social agent for the child!)
+        \item<4-> Could we replace it by someone else? Not easily
+    \end{itemize}
+\end{frame}
 
-\section{The challenge of ``doing together''}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \imageframe[scale=0.9]{joint-action-scenario}
 
@@ -497,6 +591,20 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
 \end{frame}
 }
 
+\begin{frame}{A lot has been achieved in that field already}
+
+    \begin{center}
+    \only<1>{
+            \video{0.9\columnwidth}{figs/perspective-taking/this_box.webm?start=1}
+        }
+        \only<2>{
+            \video{0.9\columnwidth}{figs/underworlds/underworlds.mp4?start=20}
+        }
+    \end{center}
+
+    \badge{laas}
+\end{frame}
+
 \begin{frame}{How do humans perform tasks together?}
 
 
@@ -510,7 +618,7 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
     involved.
     \pause
     
-        The key mecanism: {\bf prefer implicit to explicit}
+        The key mechanism: {\bf prefer implicit to explicit}
 
     \pause
 
@@ -565,7 +673,7 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
 {\paper{Clark and Wilkes-Gibbs, \emph{Referring as a collaborative
 process}, Cognition 1986 \newline Pickering and Garrod, \emph{Alignment as the basis for successful
 communication}, Research on Language and Computation 2006}
-\begin{frame}{surface alignement; grounding criterion}
+\begin{frame}{surface alignment; grounding criterion}
 
     Psycholinguistics provides a lot of the foundational work on these
     questions.
@@ -578,7 +686,7 @@ communication}, Research on Language and Computation 2006}
         \item<+-> You only ever need to reach the \emph{grounding criterion}, ie
             \emph{enough} mutual understanding for the task
         \item<+-> $\Rightarrow$ we typically only reach \emph{partial (or surface)
-            alignement} -- full alignment is usually not required
+            alignment} -- full alignment is usually not required
         \item<+-> {\bf do we need a high-level Theory of Mind at all?}
     \end{itemize}
 \end{frame}
@@ -608,183 +716,14 @@ communication}, Research on Language and Computation 2006}
 
 \begin{frame}{The problem}
     \begin{itemize}
-        \item These mecanisms are unfortunately often ill-defined, and
+        \item These mechanisms are unfortunately often ill-defined, and
             particularly difficult to turn into equations (or controllers, in
             our case)
         \item not close-form equation of social interactions $\Rightarrow$ data-driven approaches?
     \end{itemize}
 \end{frame}
 
-\begin{frame}{2 instances}
-
-    \begin{itemize}
-        \item SPARC: transfering social skills from a human expert to an autonomous robot
-        \item PInSoRo: learning to recognise complex social situations from
-            child-child interactions
-    \end{itemize}
-
-\end{frame}
-
-\section[Learning social behaviours]{Learning social autonomy from humans}
-
-{
-    \fullbackground[scale=0.9]{sparc/sparc}
-\begin{frame}[plain]
-    \badge{emmanuel}
-\end{frame}
-}
-
-\imageframe[caption={Interactive Reinforcement Learning \newline Small state
-space; $| action\_space | = 5$}, color=black]{sparc/sophies}
-
-\begin{frame}{...well, well...}
-    Can we tackle much more complicated cases?
-    \begin{itemize}
-        \item<+-> real robot?
-        \item<+-> real interaction (...with a human!)?
-        \item<+-> continuous interaction?
-        \item<+-> more realistic task (state vector \& action space)?
-        \item<+-> also including social behaviours?
-    \end{itemize}
-
-    \badge{emmanuel}
-\end{frame}
-
-\imageframe[color=black]{sparc/foodchain-game}
-\imageframe[color=black,caption={$state \in [0.;1.]^{210}$ $| action\_space| = 655$}]{sparc/gui}
-\imageframe[color=black]{sparc/overview}
-%\imageframe[color=black]{sparc/woz-gui}
-%\imageframe[caption={Overall performance (pre-, mid-, post-test)},scale=0.9]{sparc/perf}
-\imageframe[caption={Learning-related game actions}, scale=0.9]{sparc/d_eat}
-\imageframe[scale=0.9]{sparc/actions-supervised}
-\imageframe[scale=0.9]{sparc/actions}
-
-\begin{frame}{Take-home message for joint action}
-
-    \begin{columns}
-        \begin{column}{0.45\linewidth}
-            
-            \begin{center}
-                \includegraphics[width=0.9\linewidth]{sparc/sparc}
-            \end{center}
-        \end{column}
-        \begin{column}{0.55\linewidth}
-            \begin{itemize}
-                \item this example is about tutoring, however {\bf progressively
-                    transferring autonomy} is a general principle
-                \item it works well for relatively high-dimensional problems
-                \item it also works for {\bf social behaviours}
-            \end{itemize}
-        \end{column}
-    \end{columns}
-
-
-\end{frame}
-%\begin{frame}<1>[plain,label=whatsnext]{}
-%
-%    \begin{center}
-%
-%    \Large
-%    \bf How to push back the boundaries of social robotics?
-%
-%    \end{center}
-%\end{frame}
-%
-%
-%\imageframe[caption={open, underspecified situations\par complex~social~dynamics\par rich~semantics\par interplay~of~socio-cognitive~functions}]{pr2-baby-3}
-%
-%\note{
-%    \begin{itemize}
-%        \item open, underspecified situations
-%        \item complex social dynamics
-%        \item rich semantics
-%        \item interplay of several socio-cognitive functions
-%    \end{itemize}
-%}
-%
-%{
-%\paper{Baxter, Lemaignan, Trafton {\bf Workshop on Cognitive Architectures for Social HRI} -- HRI 2016}
-%\begin{frame}<5>{Surface functions for Social Cognition}
-%\centering
-%        \resizebox{!}{0.7\paperheight}{%
-%            \begin{tikzpicture}[
-%                    >=latex,
-%                every edge/.style={<-, draw, very thick}]
-%        
-%
-%            \path[small mindmap, 
-%                level 1 concept/.append style={sibling angle=360/6}, 
-%                level 2 concept/.append style={sibling angle=60}, 
-%            concept color=white,text=hriWarmGreyDark]
-%            node[concept, visible on=<1-5>] {\bf Social\\Cognition in HRI}
-%            [clockwise from=30]
-%            child[concept color=hriSec1,text=white] { node[concept] (percept) {Perception of Human's State}
-%                [clockwise from=120]
-%                child[concept color=hriSec3Dark,text=white] { node[concept]
-%                (emotions) {Empathy Emotions} }
-%                child[concept color=hriSec2Dark,text=white] { node[concept] (attention) {Attention} }
-%                child[concept color=hriSec2CompDark,text=white] { node[concept] (mmodel) {Inference of mental models} };
-%            }
-%            child[concept color=hriSec2Comp,text=white,grow=-45, visible on=<2->] { node[concept] (knowledge) {Social Knowledge} 
-%                [counterclockwise from=-140]
-%                child[concept color=hriSec1CompDark,text=white] { node[concept] (soc-rules) {Social rules} }
-%                child[concept color=hriSec3Comp,text=black] { node[concept] (soc-ctxt) {Social context} }
-%                child[concept color=hriSec2Dark,text=white] { node[concept] (memory) {Social memory} }
-%                child[concept color=hriSec3CompDark,text=white] { node[concept] (common-sense) {Common-sense} };
-%            }
-%            child[concept color=hriSec3Comp,text=black, grow=-120,visible on=<3->] { node[concept] (comm) {Communication} 
-%                [counterclockwise from=180]
-%                child[concept color=hriSec1CompDark,text=white] { node[concept] (dialog) {Verbal} }
-%                child[concept color=hriSec1Dark,text=white] { node[concept] (non-verbal) {Non-verbal} };
-%            }
-%            child[concept color=hriSec3,text=white,grow=180,visible on=<4->] { node[concept] (dynamics) {Interaction Dynamics} 
-%                [clockwise from=180]
-%                child[concept color=hriSec2Dark,text=white] { node[concept] (long-term) {Long-term interaction} };
-%            }
-%            child[concept color=hriSec2,text=black, grow=120,visible on=<5->] { node[concept] (action) {Performing with humans} 
-%                [counterclockwise from=80]
-%                child[concept color=hriSec2CompDark,text=white] { node[concept] {Action, behaviour recognition} }
-%                child[concept color=hriSec1Dark,text=white] { node[concept] {Intention reading} }
-%                child[concept color=hriSec3,text=white] { node[concept] (joint-action) {Joint actions} };
-%            };
-%
-%
-%        \end{tikzpicture}
-%    }
-%\end{frame}
-%}
-%
-%\imageframe[caption={yet...}]{pr2-baby-3}
-%
-%\begin{frame}{What methodology for social HRI?}
-%
-%    \begin{itemize}
-%        \item typical socio-cognitive tasks \textbf{too simple and
-%            constrainted}
-%            \note{
-%            Do not reflect the complexity \& dynamics of real-world interactions
-%            }
-%        \item yet, research \emph{in the wild} is \textbf{difficult to conduct
-%            rigorously and to replicate}
-%    \end{itemize}
-%
-%    \pause
-%
-%    \textbf{Finding the right task is difficult}
-%
-%    \begin{itemize}
-%        \item natural interactions $\Leftarrow$ meaningful task
-%        \item realistic with today's technologies
-%        \item practical, reproducible and measurable
-%        \item focus on social cognition
-%    \end{itemize}
-%\end{frame}
-%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section[PInSoRo]{What about more subtle social dynamics?}
+\section[Data-driven!]{Towards the data-driven study child-robot interactions?}
 
 \begin{frame}{To study social dynamics, we need...}
 
@@ -1188,41 +1127,41 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 \videoframe[0.56]{figs/kinematics_social_dynamics/clip_skel_05.mp4}
 \videoframe[0.56]{figs/kinematics_social_dynamics/clip_05.mp4}
 
-\begin{frame}{What do you see?}
-    \badge{maddy}
-
-    20 30-secs clips with a range of social situations; 200 participants on
-    m-turk.
-
-    t-test between skeleton only and full video-streams show no difference in
-    perception for the vast majority of the 11 tested constructs (cooperative,
-    competitive, friendly, sad, engaged,...).
-
-    \only<1>{
-    \begin{center}
-        \includegraphics[width=0.4\linewidth]{kinematics_social_dynamics/constructs-laughing}
-        \hspace{1cm}
-        \includegraphics[width=0.45\linewidth]{kinematics_social_dynamics/constructs-one-stops-other-play}
-    \end{center}
-
-    }
-    \only<2>{
-
-    {\bf $\Rightarrow$ 30-secs long sequences of body postures and facial landmarks
-    of dyads should be sufficient to recognise a social situation}
-    }
-
-
-\end{frame}
-
-\begin{frame}{Data crunching going on!}
-    \begin{center}
-        \includegraphics[width=0.35\linewidth]{pinsoronet/pinsoro-net-v2}
-        \includegraphics[width=0.6\linewidth]{pinsoronet/pinsoronet-v2-accuracy-social-attitude-task-engagement}
-    \end{center}
-
-    pytorch; trained on 10 epochs x 2M datapoints; {\bf WIP!!}
-\end{frame}
+%\begin{frame}{What do you see?}
+%    \badge{maddy}
+%
+%    20 30-secs clips with a range of social situations; 200 participants on
+%    m-turk.
+%
+%    t-test between skeleton only and full video-streams show no difference in
+%    perception for the vast majority of the 11 tested constructs (cooperative,
+%    competitive, friendly, sad, engaged,...).
+%
+%    \only<1>{
+%    \begin{center}
+%        \includegraphics[width=0.4\linewidth]{kinematics_social_dynamics/constructs-laughing}
+%        \hspace{1cm}
+%        \includegraphics[width=0.45\linewidth]{kinematics_social_dynamics/constructs-one-stops-other-play}
+%    \end{center}
+%
+%    }
+%    \only<2>{
+%
+%    {\bf $\Rightarrow$ 30-secs long sequences of body postures and facial landmarks
+%    of dyads should be sufficient to recognise a social situation}
+%    }
+%
+%
+%\end{frame}
+%
+%\begin{frame}{Data crunching going on!}
+%    \begin{center}
+%        \includegraphics[width=0.35\linewidth]{pinsoronet/pinsoro-net-v2}
+%        \includegraphics[width=0.6\linewidth]{pinsoronet/pinsoronet-v2-accuracy-social-attitude-task-engagement}
+%    \end{center}
+%
+%    pytorch; trained on 10 epochs x 2M datapoints; {\bf WIP!!}
+%\end{frame}
 
 
 %\videoframe[0.56]{figs/annotations.mp4?autostart&start=10}
@@ -1541,7 +1480,7 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Now for the discussion}
+\begin{frame}{What does that mean for child-robot interaction?}
 
     \begin{columns}
         \begin{column}{0.4\linewidth}
@@ -1551,28 +1490,43 @@ Coding scheme for social attitude derives from the Social Communication Coding S
             \end{center}
         \end{column}
         \begin{column}{0.6\linewidth}
+            \only<1-4> {
             \begin{itemize}
-                \item<+-> to reduce the socio-cognitive cost of collaboration, rely as much
+                \item<+-> We can reduce the socio-cognitive cost of
+                    collaboration by relying as much
                     as possible on {\bf implicit (sub-conscious) social mechanisms}
                 \item<+-> (do not be scared of ambiguous/partially defined
-                    instructions!)
-                \item<+-> however, {\bf communication dynamics} \& the {\bf recognition of grounding
-                    errors} should be research priorities
-                \item<+-> {\bf how does that relate to the higher-level concept of
-                    `theory of mind'?}
+                    instructions/situations!)
+                \item<+-> The robot needs to learn to recognise and interpret
+                    those social cues, hidden within complex social dynamics (in
+                    real-time!)
+                \item<+-> We start to have raw material. We still need to
+                    process it.
             \end{itemize}
+        }
+            \only<5-> {
+            \begin{itemize}
+                \item<+-> Yet, {\bf learning does require cognitive effort \&
+                    engagement}. We simply want to direct it to the right
+                    subject.
+            \end{itemize}
+        }
 
         \end{column}
     \end{columns}
 \end{frame}
 
 {
-    \fullbackground[color=black]{pinsoro/annotations-skel}
+    \fullbackground[color=white]{c-r-t-succeed}
 \begin{frame}[plain]
 
     \begin{columns}
         \begin{column}{0.5\linewidth}
-        \vspace{6cm}
+        \vspace{4cm}
+
+        \includegraphics[width=0.3\linewidth]{ayberk}
+        \hspace{0.1cm}
+        \includegraphics[width=0.3\linewidth]{deana}
 
         \includegraphics[width=0.3\linewidth]{charlotte}
         \hspace{0.1cm}
@@ -1586,7 +1540,7 @@ Coding scheme for social attitude derives from the Social Communication Coding S
         \begin{column}{0.5\linewidth}
 
     \vspace{6cm}
-\setbeamercolor{hriSec1Demo}{fg=white!70!black}
+\setbeamercolor{hriSec1Demo}{fg=white!30!black}
 \begin{beamercolorbox}[wd=\linewidth,ht=6ex,dp=0.7ex]{hriSec1Demo}
     \textbf{Thank you!}
 
@@ -1644,5 +1598,54 @@ Coding scheme for social attitude derives from the Social Communication Coding S
     \end{center}
 \end{frame}
 }
+
+{
+    \paper{Lemaignan et al. {\bf Learning by Teaching a Robot: The Case of Handwriting} -- Robotics and Automation Magazine 2016}
+\begin{frame}{Learning to draw a 5}
+    \begin{center}
+        \includegraphics[width=0.8\linewidth]{cowriter/henry5}
+    \end{center}
+    \badge{epfl}
+\end{frame}
+}
+
+
+{
+    \paper{Hood, Lemaignan et al. {\bf When Children Teach a Robot to Write: An
+    Autonomous Teachable Humanoid [...]} -- HRI 2015}
+\begin{frame}{CoWriter implementation}
+    \centering
+
+    \only<1>{
+        \video{0.9\textwidth}{figs/cowriter/nao-tablet-demo.mp4}
+    }
+
+    \only<2>{
+        \includegraphics[width=0.8\textwidth]{cowriter/pca}
+    }
+
+    \only<3>{
+        \includegraphics[width=0.8\textwidth]{cowriter/cowriter-g.png}
+    }
+
+    \only<4>{
+        \includegraphics[width=0.8\textwidth]{cowriter/learningSdemo}
+    }
+
+    %\badge{epfl}
+    \badge{deana-epfl}
+\end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[plain]
+    \begin{center}
+        \includegraphics[width=0.8\linewidth]{cowriter/cowriter-fsm.png}
+    \end{center}
+
+    \backbutton{}
+\end{frame}
+
 
 \end{document}
