@@ -102,6 +102,19 @@
 
 \licenseframe{github.com/severin-lemaignan/l2tor-symposium2018-technical-challenges-cri}
 
+\imageframe[color=black]{robots-classroom}
+\imageframe[color=black]{cri-focus-child-robot}
+\imageframe[color=black]{cri-focus-child-robot-teacher}
+\imageframe[color=black]{robots-classroom}
+
+\imageframe[color=black]{interactions-actors}
+\imageframe{interactions-cr}
+\imageframe{interactions-crt}
+\imageframe{interactions-ccrt}
+\imageframe{interactions-ccrtg}
+\imageframe{interactions-ccrtgc}
+
+
 \section{What challenges are we talking about, exactly?}
 
 \imageframe[color=black,caption={open, underspecified situations\par
@@ -163,8 +176,46 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
 }
 
 
- \section[Social interactions?]{Fine, but maybe we do not really need social
- robots?}
+\section{The classroom}
+
+ \begin{frame}[plain]
+     
+        \Large
+     What is the most effective learning tool in a classroom?
+ \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ \imageframe{cellulo/pencil}
+
+ \begin{frame}{Why that?}
+
+     \begin{itemize}
+         \item<1-> {\bf ubiquitous}: a pervasive yet unremarkable tool
+             that blend into the daily learning routine; has to be
+             trustworthy(\ie reliable), readily replaceable (\ie cheap, no
+             affective bonding), intuitive (\ie few simple affordances)
+
+         \item<2-> {\bf versatile}: applicable to a broad range of learning
+             scenarios; the good tool is not overly specialised (appearance and
+             interaction modalities do not imply or force a specific/unique use
+             case)
+
+         \item<3-> {\bf practical}: to gain field
+             acceptance in the classrooms, a tool must critically
+             represent a net educative gain and must not incur higher
+             workload for the teachers
+     \end{itemize}
+ \end{frame}
+
+
+ \imageframe[caption=Pens and paper are pervasive...]{cellulo/classroom}
+ \imageframe[caption=...what about robots?]{cellulo/classroom}
+
+
+
+\section[Social robots?]{Do we need social robots at all?}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -173,33 +224,20 @@ interplay~of~socio-cognitive~functions}]{robots-classroom}
          \resizebox{\linewidth}{!}{
              \begin{tikzpicture}[>=latex]
                  \node[double arrow,draw] (spec) {Interaction spectrum};
-                 \node<1>[left=of spec] {Non-social};
-                 \node<2>[left=of spec] {\bf Cellulo};
-                 \node<1>[right=of spec] {Social};
-                 \node<2>[right=of spec] {\bf CoWriter};
+                 \node<1>[minimum size=3cm,left=of spec] {Non-social};
+                 \node<2>[minimum size=3cm,left=of spec] {Tool?};
+                 \node<3>[minimum size=3cm,left=of spec] {\bf Cellulo};
+                 \node<1>[minimum size=3cm,right=of spec] {Social};
+                 \node<2>[minimum size=3cm,right=of spec] {Peer/tutor?};
+                 \node<3>[minimum size=3cm,right=of spec] {\bf CoWriter};
              \end{tikzpicture}
          }
      \end{center}
-    \badge{epfl}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \begin{frame}[label=cellulo]{Non-social interaction}
-     What is the most effective learning tool in a classroom?
-
-     \begin{center}
-         \includegraphics<2>[width=0.8\linewidth]{cellulo/pencil}
-     \end{center}
- \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
- \imageframe[caption=Pens and paper are pervasive...]{cellulo/classroom}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
- \imageframe[caption=...so should robots]{cellulo/classroom-withcellulo}
+ \imageframe[caption=Cellulo]{cellulo/classroom-withcellulo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
