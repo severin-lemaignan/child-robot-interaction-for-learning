@@ -78,8 +78,8 @@
 %--------------------------------------------------------------------------
 % General presentation settings
 %--------------------------------------------------------------------------
-\title{learning \& child-robot interaction}
-\subtitle{a glimpse into the next challenges}
+\title{child-robot interaction for learning}
+\subtitle{are we ready yet to push the classroom's door?}
 \date{{\bf  Symposium on Robots for Language Learning} -- 13 Dec. 2018}
 \author{Séverin Lemaignan}
 \institute{{\bf Bristol Robotics Lab} University of the West of England}
@@ -119,7 +119,8 @@
     around...?
 \end{frame}
 
-\imageframe[color=black,caption={Classrooms are scary!}]{robots-classroom}
+\imageframe[color=black]{paul_experimental_setup}
+\imageframe[color=black]{ranger-side}
 
 \imageframe[color=black,caption={open, underspecified situations\par
 complex~social~dynamics\par rich~semantics\par
@@ -222,7 +223,7 @@ interplay~of~socio-cognitive~functions\par
              interaction modalities do not imply or force a specific/unique use
              case)
 
-         \item<3-> {\bf practical}: to gain broad
+         \item<3-> {\bf effective}: to gain broad
              acceptance in a classroom, a tool must critically
              represent a net educative gain and must not incur higher
              workload for the teacher
@@ -244,14 +245,13 @@ interplay~of~socio-cognitive~functions\par
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \imageframe{cellulo/classroom}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 {
     \paper{\"Ozg\"ur, Lemaignan et al. {\bf Cellulo: Versatile Handheld Robots
     for Education} -- HRI 2017}
- \begin{frame}{Cellulo: design principles}
+ \begin{frame}{Design principles for the classroom}
 
      \begin{itemize}
          \item<1-> {\bf ubiquitous}: a pervasive yet unremarkable tool
@@ -263,7 +263,7 @@ interplay~of~socio-cognitive~functions\par
              scenarios; the robots’ hardware, appearance and interaction
              modalities must not imply or be constrained to specific use cases
 
-         \item<3-> {\bf practical}: to gain field
+         \item<3-> {\bf effective}: to gain field
              acceptance in the classrooms, educative robots must critically
              represent a net educative gain and must not incur higher
              workload for the teachers
@@ -273,7 +273,8 @@ interplay~of~socio-cognitive~functions\par
  \end{frame}
 }
 
- \imageframe{cellulo/classroom-withcellulo}
+\imageframe{cellulo/classroom}
+\imageframe{cellulo/classroom-withcellulo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -296,37 +297,6 @@ interplay~of~socio-cognitive~functions\par
  \videoframe[0.56]{figs/cellulo/cellulo-swarm-demo.mp4}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{
-    \paper{Hostettler, \"Ozg\"ur, Lemaignan et al. {\bf Real-Time High-Accuracy
-    2D Localization with Structured Patterns} -- ICRA 2016}
- \begin{frame}{Interaction with the paper}
-     \badge{ayberk-epfl}
-     Critically, Cellulo is meant as an {\bf interaction between
-     (classroom-friendly) paper and the robots}.
-
-     \pause
-
-     Achieved through a {\bf paper-based absolute localisation system}
-
-     \begin{center}
-         \includegraphics<3>[width=0.8\linewidth]{cellulo/treasure-game-1}
-         \includegraphics<4>[width=\linewidth]{cellulo/treasure-game-2}
-     \end{center}
-
-     \only<5>{
-
-         \begin{itemize}
-             \item even more than 'classroom-friendly', paper is 'teacher-friendly'
-             \item easy to manipulate, copy, print, cutout, dispose...
-             \item unique activity IDs: drop the robots onto the sheet, it
-                 recognizes the activity
-         \end{itemize}
-     }
-
- \end{frame}
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  \imageframe[color=black,caption=Concept 1: chemistry]{cellulo/concept-molecules}
@@ -353,9 +323,8 @@ interplay~of~socio-cognitive~functions\par
  \begin{frame}[plain]{}
 
      \centering
-    If a ``pen-like'' robot is actually doable...
+    If a ``pen-like'' robot is actually doable,
 
-     \pause
 
      \Large\bf
      ...are social robots relevant at all...?
@@ -375,46 +344,40 @@ interplay~of~socio-cognitive~functions\par
 
 \section{The teacher}
 
-\begin{frame}[plain]
-
-    \Large
-    Beyond the question of the practical integration of robots into the
-    classroom, how to address the \textbf{tension between robot autonomy and teacher
-    control}?
-
-
-\end{frame}
-
 
 {
-    \fullbackground[scale=0.9]{sparc/sparc}
+    \fullbackground[scale=0.9]{sparc/sparc-bg}
 \begin{frame}[plain]
-    \badge{emmanuel}
+    \Large
+    Beyond the question of the practical integration of robots into the
+    classroom, how to address \textbf{teachers' acceptance}, and specifically, the \textbf{tension between robot autonomy and teacher
+    control}?
+
 \end{frame}
 }
 
-\imageframe[caption={Interactive Reinforcement Learning \newline Small state
-space; $| action\_space | = 5$}, color=black]{sparc/sophies}
+\imageframe[caption={\textbf{Interactive Reinforcement Learning} to the rescue?}, color=black]{sparc/sophies}
 
-\begin{frame}{...well, well...}
-    Can we tackle much more complicated cases?
+\begin{frame}{Autonomous robot, yet teacher in the loop?}
+
+    To be relevant to us, we need:
+    
     \begin{itemize}
-        \item<+-> real robot?
-        \item<+-> real interaction (...with a human!)?
-        \item<+-> continuous interaction?
-        \item<+-> more realistic task (state vector \& action space)?
-        \item<+-> also including social behaviours \& social dynamics?
+        \item<+-> a real robot
+        \item<+-> a real interaction (...with a human!)
+        \item<+-> a continuous interaction
+        \item<+-> a realistic task (large state vector \& action space)
+        \item<+-> also including social behaviours \& social dynamics
     \end{itemize}
 
     \badge{emmanuel}
 \end{frame}
 
 \imageframe[color=black]{sparc/foodchain-game}
-\imageframe[color=black,caption={$state \in [0.;1.]^{210}$ $| action\_space| = 655$}]{sparc/gui}
+\imageframe[color=black,caption={$|state| = 210$ $| action\_space| = 655$}]{sparc/gui}
 \imageframe[color=black]{sparc/overview}
 %\imageframe[color=black]{sparc/woz-gui}
 %\imageframe[caption={Overall performance (pre-, mid-, post-test)},scale=0.9]{sparc/perf}
-\imageframe[caption={Learning-related game actions}, scale=0.9]{sparc/d_eat}
 \imageframe[scale=0.9]{sparc/actions-supervised}
 \imageframe[scale=0.9]{sparc/actions}
 \imageframe[scale=0.9]{sparc/social-timing}
@@ -431,9 +394,9 @@ space; $| action\_space | = 5$}, color=black]{sparc/sophies}
         \begin{column}{0.55\linewidth}
             \only<1>{
             \begin{itemize}
-                \item {\bf Progressively transferring autonomy} is a general
-                    principle; it demonstrably works in non-trivial tutoring
-                    scenarios
+                \item {\bf Progressively transferring autonomy}  demonstrably
+                    works in non-trivial tutoring scenarios
+
                 \item (it also learns some elements of {\bf social behaviours} and
                     {\bf social timing})
             \end{itemize}
@@ -447,7 +410,7 @@ space; $| action\_space | = 5$}, color=black]{sparc/sophies}
                 \item \textbf{observability} and possibility to \textbf{take
                     over};
                 \item because the training takes place in-situ, the
-                    robot behaviours are \textbf{co-constructed} with the
+                    robot behaviours are \textbf{co-constructed} by the
                     teacher and the child
             \end{itemize}
         }
@@ -549,14 +512,30 @@ space; $| action\_space | = 5$}, color=black]{sparc/sophies}
 
 \begin{frame}{What role does the robot play here?}
     \begin{itemize}
-        \item<1-> Not a 'tool to teach robotics', not a facilitator/tutor
-        \item<2-> The robot as 'cognitive agent' is key here (Protégé effect,
+        \item<+-> The robot as 'cognitive agent' is key here (Protégé effect,
             metacognition)
-        \item<3-> (note: a tool for the teacher vs a social agent for the child!)
-        \item<4-> Could we replace it by someone else? Not easily
+        \item<+-> (note: a tool for the teacher vs a social agent for the child!)
     \end{itemize}
 \end{frame}
 
+\begin{frame}[plain]
+
+    \begin{center}
+
+    {\Large\bf
+    But this is turn by turn!
+
+    What about less structured, ``messy'' interactions?
+    }
+
+    \pause
+
+    ...we are not yet very good at modelling real-world social dynamics...
+
+        \emph{Joint action} offers nevertheless a possible framework to reason
+        about it.
+    \end{center}
+\end{frame}
 
 \imageframe[scale=0.9]{joint-action-scenario}
 
@@ -584,14 +563,14 @@ space; $| action\_space | = 5$}, color=black]{sparc/sophies}
         \item what about the human's own plans?
         \item monitoring/recognising error situations
         \item what to do when we're going 'off track'?
-        \item ...many more!
+        \item ...
     \end{itemize}
     }
 
 \end{frame}
 }
 
-\begin{frame}{A lot has been achieved in that field already}
+\begin{frame}{We can do a bit already}
 
     \begin{center}
     \only<1>{
@@ -687,7 +666,7 @@ communication}, Research on Language and Computation 2006}
             \emph{enough} mutual understanding for the task
         \item<+-> $\Rightarrow$ we typically only reach \emph{partial (or surface)
             alignment} -- full alignment is usually not required
-        \item<+-> {\bf do we need a high-level Theory of Mind at all?}
+        %\item<+-> {\bf do we need a high-level Theory of Mind at all?}
     \end{itemize}
 \end{frame}
 }
@@ -719,22 +698,20 @@ communication}, Research on Language and Computation 2006}
         \item These mechanisms are unfortunately often ill-defined, and
             particularly difficult to turn into equations (or controllers, in
             our case)
-        \item not close-form equation of social interactions $\Rightarrow$ data-driven approaches?
+        \item no close-form equation of social interactions $\Rightarrow$ data-driven approaches?
     \end{itemize}
 \end{frame}
 
-\section[Data-driven!]{Towards the data-driven study child-robot interactions?}
+\section[Data-driven!]{Towards the data-driven study of social dynamics}
 
-\begin{frame}{To study social dynamics, we need...}
+\begin{frame}{Data!}
 
-    \pause
-
-    \begin{center}
-        A {\bf task}!
-    \end{center}
+    If we want to use machine learning, we need data (relevant to child-robot
+    interactions in a learning environment).
     
     \pause
-    ...that exhibits:
+
+    ...a task that exhibits:
 
     \begin{itemize}
         \item complex social dynamics
@@ -935,28 +912,6 @@ communication}, Research on Language and Computation 2006}
 
 %\imageframe[color=black]{freeplay/3d-point-cloud-facial-features}
 
-\begin{frame}{What did we record?}
-
-\small
-\begin{tabular}{@{}lll@{}}
-\toprule
-\textbf{Domain} & \textbf{Type}                              & \textbf{Details}                          \\ \midrule
-child $\times$ 2        & audio                                      & 16kHz, mono, semi-directional             \\
-                & face (RGB)                                 & qHD (960x540), 30Hz                       \\
-                & face (depth)                               & VGA (640x480), 30Hz                       \\
-                & facial features                            & 70 2D points, 30Hz                        \\
-                & skeleton                                   & 15 2D points, 30Hz                        \\
-                & hands                                      & 20 x 2 2D points, 30Hz                    \\ \midrule
-environment     & RGB                                        & qHD (960x540), 29.7Hz                     \\ \midrule
-touchscreen     & background drawing (RGB)                   & 4Hz                                       \\
-                & touches                                    & 6 points multi-touch, 10Hz                \\
-                & items position and orientation             & (x,y,theta), 10Hz                         \\ \midrule
-annotations     & \multicolumn{2}{l}{timestamped annotations of social behaviours} \\\midrule
-+ post-process          & \multicolumn{2}{l}{optical flow, audio features}           \\
-                & \multicolumn{2}{l}{facial action units...}                                   \\ \bottomrule
-\end{tabular}
-
-\end{frame}
 
 %\videoframe[0.56]{figs/bestof.mp4?autostart}
 
@@ -1118,8 +1073,6 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section[Data-driven social dynamics]{Towards data-driven social dynamics?}
 
 \videoframe[0.56]{figs/kinematics_social_dynamics/clip_skel_01.mp4}
 \videoframe[0.56]{figs/kinematics_social_dynamics/clip_01.mp4}
@@ -1480,7 +1433,7 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{What does that mean for child-robot interaction?}
+\begin{frame}{What does that mean for CRI \& learning?}
 
     \begin{columns}
         \begin{column}{0.4\linewidth}
@@ -1496,12 +1449,12 @@ Coding scheme for social attitude derives from the Social Communication Coding S
                     collaboration by relying as much
                     as possible on {\bf implicit (sub-conscious) social mechanisms}
                 \item<+-> (do not be scared of ambiguous/partially defined
-                    instructions/situations!)
+                    instructions/situations)
                 \item<+-> The robot needs to learn to recognise and interpret
                     those social cues, hidden within complex social dynamics (in
                     real-time!)
-                \item<+-> We start to have raw material. We still need to
-                    process it.
+                \item<+-> We have some raw material. Time to
+                    process it together!
             \end{itemize}
         }
             \only<5-> {
@@ -1515,6 +1468,42 @@ Coding scheme for social attitude derives from the Social Communication Coding S
         \end{column}
     \end{columns}
 \end{frame}
+
+{
+    \fullbackground[color=white]{c-r-t-succeed-dim}
+\begin{frame}[plain]
+
+    {\Large In summary:}
+
+    \begin{itemize}
+        \item<+-> Integration of \emph{social} robots in the classroom environment?
+        \item<+-> Role of the teacher? \emph{Transfer of autonomy} looks like a
+            promising lead.
+        \item<+-> \emph{Doing together} with the child will require a better
+            understanding of the social dynamics. Machine learning to the
+            rescue?
+        \item<+-> ...but the old assumption that full grounding of the
+            communication is necessary, does not hold.
+    \end{itemize}
+\end{frame}
+}
+
+
+{
+    \fullbackground[color=white]{c-r-t-succeed-dim}
+\begin{frame}[plain]
+
+    {\Large A few open questions for the aspiring PhDs:}
+
+    \begin{itemize}
+        \item<+-> Isn't it just about engaging the children into their learning?
+        \item<+-> What about group dynamics?
+        \item<+-> Over time, what place would a social robot take in the
+            classroom?
+    \end{itemize}
+\end{frame}
+}
+
 
 {
     \fullbackground[color=white]{c-r-t-succeed}
@@ -1647,5 +1636,60 @@ Coding scheme for social attitude derives from the Social Communication Coding S
     \backbutton{}
 \end{frame}
 
+
+{
+    \paper{Hostettler, \"Ozg\"ur, Lemaignan et al. {\bf Real-Time High-Accuracy
+    2D Localization with Structured Patterns} -- ICRA 2016}
+ \begin{frame}{Interaction with the paper}
+     \badge{ayberk-epfl}
+     Critically, Cellulo is meant as an {\bf interaction between
+     (classroom-friendly) paper and the robots}.
+
+     \pause
+
+     Achieved through a {\bf paper-based absolute localisation system}
+
+     \begin{center}
+         \includegraphics<3>[width=0.8\linewidth]{cellulo/treasure-game-1}
+         \includegraphics<4>[width=\linewidth]{cellulo/treasure-game-2}
+     \end{center}
+
+     \only<5>{
+
+         \begin{itemize}
+             \item even more than 'classroom-friendly', paper is 'teacher-friendly'
+             \item easy to manipulate, copy, print, cutout, dispose...
+             \item unique activity IDs: drop the robots onto the sheet, it
+                 recognizes the activity
+         \end{itemize}
+     }
+
+ \end{frame}
+}
+
+\imageframe[caption={Learning-related game actions}, scale=0.9]{sparc/d_eat}
+
+\begin{frame}{What did we record?}
+
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Domain} & \textbf{Type}                              & \textbf{Details}                          \\ \midrule
+child $\times$ 2        & audio                                      & 16kHz, mono, semi-directional             \\
+                & face (RGB)                                 & qHD (960x540), 30Hz                       \\
+                & face (depth)                               & VGA (640x480), 30Hz                       \\
+                & facial features                            & 70 2D points, 30Hz                        \\
+                & skeleton                                   & 15 2D points, 30Hz                        \\
+                & hands                                      & 20 x 2 2D points, 30Hz                    \\ \midrule
+environment     & RGB                                        & qHD (960x540), 29.7Hz                     \\ \midrule
+touchscreen     & background drawing (RGB)                   & 4Hz                                       \\
+                & touches                                    & 6 points multi-touch, 10Hz                \\
+                & items position and orientation             & (x,y,theta), 10Hz                         \\ \midrule
+annotations     & \multicolumn{2}{l}{timestamped annotations of social behaviours} \\\midrule
++ post-process          & \multicolumn{2}{l}{optical flow, audio features}           \\
+                & \multicolumn{2}{l}{facial action units...}                                   \\ \bottomrule
+\end{tabular}
+
+\end{frame}
 
 \end{document}
