@@ -131,7 +131,7 @@
 \title{child-robot interaction for learning}
 \subtitle{are we ready yet to push the classroom's door?}
 \date{{\bf  Robot4SEN} -- 05 Jul. 2019}
-\author{Séverin Lemaignan}
+\author{Séverin Lemaignan \texttt{\small @skadge}}
 \institute{{\bf Bristol Robotics Lab} University of the West of England}
 
 %--------------------------------------------------------------------------
@@ -490,6 +490,7 @@ interplay~of~socio-cognitive~functions\par
 
 \end{frame}
 
+\imageframe[color=black, caption=Social support beyond learning]{couch25k/supervised}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -601,7 +602,7 @@ interplay~of~socio-cognitive~functions\par
 
      \begin{itemize}
          \item purely a tool from the perspective of the teacher
-         \item a (somewhat?) social agent from the perspective of the child
+         \item a (somewhat) social agent from the perspective of the child
              $\rightarrow$ engagement, learning of social behaviours, etc
      \end{itemize}
    }
@@ -872,8 +873,8 @@ interplay~of~socio-cognitive~functions\par
      \pause
 
 
-    Most of our social and behavioural alignment comes from sub-conscious social
-    mechanisms:
+    Most of our social abilities build on sub-conscious social
+    behaviours:
 
     \begin{itemize}
         \item entrainment (coupling), 
@@ -900,33 +901,80 @@ interplay~of~socio-cognitive~functions\par
 %
 %\section[Data-driven!]{Towards the data-driven study of social dynamics}
 
-%\begin{frame}{Data!}
-%
-%    If we want to use machine learning, we need data (relevant to child-robot
-%    interactions in a learning environment).
-%    
-%    \pause
-%
-%    ...a task that exhibits:
-%
-%    \begin{itemize}
-%        \item complex social dynamics
-%        \item open, underspecified situations
-%        \item natural interactions
-%        \item rich semantics
-%        \item interplay of many socio-cognitive functions
-%    \end{itemize}
-%
-%    \pause
-%
-%    while being...
-%    \begin{itemize}
-%        \item reproducible/replicable experimental procedure
-%        \item clear quantitative metrics
-%        \item practical
-%    \end{itemize}
-%\end{frame}
 
+%
+\videoframe[0.56]{figs/freeplay/maud-zoe-pilot-edit.mkv?autostart&noaudio}
+%
+{
+    \paper{Parten, {\bf Social participation among preschool children} Journal
+    of Abnormal and Social Psychology 1932}
+\begin{frame}[label=parten]{Stages of play}
+
+    In developmental psychology, Parten's {\bf stages of play}:
+
+    \begin{enumerate}
+        \item \includegraphics[height=1cm]{figs/stagesofplay/solitary} {\bf Solitary (independent) play}
+        \item \includegraphics[height=1cm]{figs/stagesofplay/onlooker} {\bf Onlooker play}
+        \item \includegraphics[height=1cm]{figs/stagesofplay/parallel}{\bf Parallel play}
+        \item \includegraphics[height=1cm]{figs/stagesofplay/associative}{\bf Associative play}
+        \item \includegraphics[height=1cm]{figs/stagesofplay/cooperative}{\bf Cooperative play}
+    \end{enumerate}
+
+    \note{
+    \begin{enumerate}
+        \item {\bf Solitary (independent) play}: Playing separately from
+            others, with no reference to what others are doing.
+        \item {\bf Onlooker play}: Watching others play. May engage in
+            conversation but not engaged in doing. True focus on the children at
+            play.
+        \item {\bf Parallel play} (adjacent play, social coaction): Playing
+            with similar objects, clearly beside others but not with them (near
+            but not with others.)
+        \item {\bf Associative play}:  Playing with others without
+            organization of play activity. Initiating or responding to
+            interaction with peers. 
+        \item {\bf Cooperative play}: Coordinating one’s behavior with that
+            of a peer. Everyone has a role, with the emergence of a sense of
+            belonging to a group. Beginning of "team work."
+    \end{enumerate}
+    }
+
+
+\end{frame}
+}
+%
+\videoframe[0.56]{figs/freeplay/maud-zoe-pilot-edit.mkv?autostart&noaudio&start=28}
+
+\begin{frame}[plain]
+    \begin{center}
+    \Large\bf
+        Can we turn it into a rigorous research methodology?
+    \end{center}
+\end{frame}
+
+%\imageframe[color=black, scale=0.9]{freeplay/sandbox}
+
+\begin{frame}{Appropriate social situation?}
+
+    ...a situation/activity that exhibits:
+
+    \begin{itemize}
+        \item complex social dynamics
+        \item open, underspecified situations
+        \item natural interactions
+        \item rich semantics
+        \item interplay of many socio-cognitive functions
+    \end{itemize}
+
+    \pause
+
+    while being...
+    \begin{itemize}
+        \item reproducible/replicable experimental procedure
+        \item clear quantitative \& qualitative metrics
+        \item practical!
+    \end{itemize}
+\end{frame}
 
 
 \begin{frame}{Free play}
@@ -951,57 +999,6 @@ interplay~of~socio-cognitive~functions\par
 
 
 \end{frame}
-%
-%\videoframe[0.56]{figs/freeplay/maud-zoe-pilot-edit.mkv?autostart&noaudio}
-%
-%{
-%    \paper{Parten, {\bf Social participation among preschool children} Journal
-%    of Abnormal and Social Psychology 1932}
-%\begin{frame}[label=parten]{Stages of play}
-%
-%    In developmental psychology, Parten's {\bf stages of play}:
-%
-%    \begin{enumerate}
-%        \item \includegraphics[height=1cm]{figs/stagesofplay/solitary} {\bf Solitary (independent) play}
-%        \item \includegraphics[height=1cm]{figs/stagesofplay/onlooker} {\bf Onlooker play}
-%        \item \includegraphics[height=1cm]{figs/stagesofplay/parallel}{\bf Parallel play}
-%        \item \includegraphics[height=1cm]{figs/stagesofplay/associative}{\bf Associative play}
-%        \item \includegraphics[height=1cm]{figs/stagesofplay/cooperative}{\bf Cooperative play}
-%    \end{enumerate}
-%
-%    \note{
-%    \begin{enumerate}
-%        \item {\bf Solitary (independent) play}: Playing separately from
-%            others, with no reference to what others are doing.
-%        \item {\bf Onlooker play}: Watching others play. May engage in
-%            conversation but not engaged in doing. True focus on the children at
-%            play.
-%        \item {\bf Parallel play} (adjacent play, social coaction): Playing
-%            with similar objects, clearly beside others but not with them (near
-%            but not with others.)
-%        \item {\bf Associative play}:  Playing with others without
-%            organization of play activity. Initiating or responding to
-%            interaction with peers. 
-%        \item {\bf Cooperative play}: Coordinating one’s behavior with that
-%            of a peer. Everyone has a role, with the emergence of a sense of
-%            belonging to a group. Beginning of "team work."
-%    \end{enumerate}
-%    }
-%
-%
-%\end{frame}
-%}
-%
-%\videoframe[0.56]{figs/freeplay/maud-zoe-pilot-edit.mkv?autostart&noaudio&start=28}
-%
-%\begin{frame}[plain]
-%    \begin{center}
-%    \Large\bf
-%        Can we make it work for HRI?
-%    \end{center}
-%\end{frame}
-
-%\imageframe[color=black, scale=0.9]{freeplay/sandbox}
 
 \imageframe{freeplay/freeplay-overview2}
 
@@ -1697,18 +1694,33 @@ Coding scheme for social attitude derives from the Social Communication Coding S
         \begin{column}{0.6\linewidth}
     \begin{itemize}
         \item<+-> Not only 'child-robot interaction for learning', but also
-            'classroom-robot interaction': importance of orchestration
+            'classroom-robot interaction' (importance of \emph{orchestration})
         \item<+-> Right balance \emph{tool}-\emph{social robot}?
         \item<+-> Role of the teacher? \emph{Supervised autonomy} looks like a
             possible direction.
         \item<+-> \emph{Doing together} with the child will require a better
             understanding of the social dynamics. Machine learning to the
             rescue?
+        \item<+-> However: \emph{you reminded us not to forget to just try!} Thank
+            you!
     \end{itemize}
         \end{column}
     \end{columns}
 \end{frame}
 
+{
+    \fullbackground[color=white]{c-r-t-succeed}
+\begin{frame}[plain]
+    \vspace{7cm}
+    \centering
+    \large
+    And don't loose the focus:
+    \bf
+
+    robots to support rich \& fun human-human interactions!
+
+\end{frame}
+}
 %
 %{
 %    \fullbackground[color=white]{c-r-t-succeed-dim}
