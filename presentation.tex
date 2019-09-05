@@ -130,7 +130,7 @@
 %--------------------------------------------------------------------------
 \title{child-robot interaction for learning}
 \subtitle{are we ready yet to push the classroom's door?}
-\date{{\bf  Robot4SEN} -- 05 Jul. 2019}
+\date{{\bf  BrisTech} -- 05 Sept 2019}
 \author{Séverin Lemaignan \texttt{\small @skadge}}
 \institute{{\bf Bristol Robotics Lab} University of the West of England}
 
@@ -147,6 +147,8 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\imageframe{splash}
 
 \maketitle
 
@@ -192,12 +194,12 @@ interplay~of~socio-cognitive~functions\par
 \imageframe[color=black]{cri-focus-child-robot-teacher}
 \imageframe[color=black]{robots-classroom}
 
-\imageframe[color=black]{interactions-actors}
-\imageframe{interactions-cr}
-\imageframe{interactions-crt}
-\imageframe{interactions-ccrt}
-\imageframe{interactions-ccrtg}
-\imageframe{interactions-ccrtgc}
+%\imageframe[color=black]{interactions-actors}
+%\imageframe{interactions-cr}
+%\imageframe{interactions-crt}
+%\imageframe{interactions-ccrt}
+%\imageframe{interactions-ccrtg}
+%\imageframe{interactions-ccrtgc}
 
 
 %\section{What challenges are we talking about, exactly?}
@@ -348,6 +350,40 @@ interplay~of~socio-cognitive~functions\par
      \end{itemize}
         \badge{ayberk-epfl}
  \end{frame}
+
+\imageframe[color=black]{cellulo/balldrive-cellulo-model}
+
+\videoframe[0.56]{figs/cellulo/cellulo.mp4}
+
+{
+    \paper{Hostettler, \"Ozg\"ur, Lemaignan et al. {\bf Real-Time High-Accuracy
+    2D Localization with Structured Patterns} -- ICRA 2016}
+ \begin{frame}{Interaction with the paper}
+     \badge{ayberk-epfl}
+     Critically, Cellulo is meant as an {\bf interaction between
+     (classroom-friendly) paper and the robots}.
+
+     \pause
+
+     Achieved through a {\bf paper-based absolute localisation system}
+
+     \begin{center}
+         \includegraphics<3>[width=0.8\linewidth]{cellulo/treasure-game-1}
+         \includegraphics<4>[width=\linewidth]{cellulo/treasure-game-2}
+     \end{center}
+
+     \only<5>{
+
+         \begin{itemize}
+             \item even more than 'classroom-friendly', paper is 'teacher-friendly'
+             \item easy to manipulate, copy, print, cutout, dispose...
+             \item unique activity IDs: drop the robots onto the sheet, it
+                 recognizes the activity
+         \end{itemize}
+     }
+
+ \end{frame}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -770,7 +806,86 @@ interplay~of~socio-cognitive~functions\par
 %}
 
 
-\section{Assessing the interaction}
+\begin{frame}{In conclusion}
+
+    \begin{columns}
+        \begin{column}{0.4\linewidth}
+            
+            \begin{center}
+                \includegraphics[width=0.9\linewidth]{joint-action-scenario-completed}
+            \end{center}
+        \end{column}
+        \begin{column}{0.6\linewidth}
+    \begin{itemize}
+        \item<+-> Not only 'child-robot interaction for learning', but also
+            'classroom-robot interaction' (importance of \emph{orchestration})
+        \item<+-> Right balance \emph{tool}-\emph{social robot}?
+        \item<+-> Role of the teacher? \emph{Supervised autonomy} looks like a
+            possible direction.
+        \item<+-> \emph{Doing together} with the child will require a better
+            understanding of the social dynamics. Machine learning to the
+            rescue?
+        \item<+-> And \emph{do not to forget to also try new things!}
+    \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+{
+    \fullbackground[color=white]{c-r-t-succeed}
+\begin{frame}[plain]
+    \vspace{7cm}
+    \centering
+    \large
+    And don't loose the focus:
+    \bf
+
+    robots to support rich \& fun human-human interactions!
+
+\end{frame}
+}
+
+{
+    \fullbackground[color=white]{c-r-t-succeed}
+\begin{frame}[plain]
+
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+        \vspace{3cm}
+
+        \includegraphics[width=0.3\linewidth]{katie}
+
+        \includegraphics[width=0.3\linewidth]{ayberk}
+        \hspace{0.1cm}
+        \includegraphics[width=0.3\linewidth]{deana}
+
+        \includegraphics[width=0.3\linewidth]{charlotte}
+        \hspace{0.1cm}
+        \includegraphics[width=0.3\linewidth]{emmanuel}
+
+        \includegraphics[width=0.3\linewidth]{chris}
+        \hspace{0.1cm}
+        \includegraphics[width=0.3\linewidth]{maddy}
+
+        \end{column}
+        \begin{column}{0.5\linewidth}
+
+    \vspace{6cm}
+\setbeamercolor{hriSec1Demo}{fg=white!30!black}
+\begin{beamercolorbox}[wd=\linewidth,ht=6ex,dp=0.7ex]{hriSec1Demo}
+    \textbf{Thank you!}
+
+\end{beamercolorbox}
+        \end{column}
+    \end{columns}
+\end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\miniframesoff
+\section[]{Some more stuff}
+
+\section[]{Assessing the interaction}
 
 
 {
@@ -1682,45 +1797,9 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 %    \end{columns}
 %\end{frame}
 
-\begin{frame}{In conclusion}
 
-    \begin{columns}
-        \begin{column}{0.4\linewidth}
-            
-            \begin{center}
-                \includegraphics[width=0.9\linewidth]{joint-action-scenario-completed}
-            \end{center}
-        \end{column}
-        \begin{column}{0.6\linewidth}
-    \begin{itemize}
-        \item<+-> Not only 'child-robot interaction for learning', but also
-            'classroom-robot interaction' (importance of \emph{orchestration})
-        \item<+-> Right balance \emph{tool}-\emph{social robot}?
-        \item<+-> Role of the teacher? \emph{Supervised autonomy} looks like a
-            possible direction.
-        \item<+-> \emph{Doing together} with the child will require a better
-            understanding of the social dynamics. Machine learning to the
-            rescue?
-        \item<+-> However: \emph{you reminded us not to forget to just try!} Thank
-            you!
-    \end{itemize}
-        \end{column}
-    \end{columns}
-\end{frame}
 
-{
-    \fullbackground[color=white]{c-r-t-succeed}
-\begin{frame}[plain]
-    \vspace{7cm}
-    \centering
-    \large
-    And don't loose the focus:
-    \bf
 
-    robots to support rich \& fun human-human interactions!
-
-\end{frame}
-}
 %
 %{
 %    \fullbackground[color=white]{c-r-t-succeed-dim}
@@ -1737,44 +1816,6 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 %}
 %
 
-{
-    \fullbackground[color=white]{c-r-t-succeed}
-\begin{frame}[plain]
-
-    \begin{columns}
-        \begin{column}{0.5\linewidth}
-        \vspace{4cm}
-
-        \includegraphics[width=0.3\linewidth]{ayberk}
-        \hspace{0.1cm}
-        \includegraphics[width=0.3\linewidth]{deana}
-
-        \includegraphics[width=0.3\linewidth]{charlotte}
-        \hspace{0.1cm}
-        \includegraphics[width=0.3\linewidth]{emmanuel}
-
-        \includegraphics[width=0.3\linewidth]{chris}
-        \hspace{0.1cm}
-        \includegraphics[width=0.3\linewidth]{maddy}
-
-        \end{column}
-        \begin{column}{0.5\linewidth}
-
-    \vspace{6cm}
-\setbeamercolor{hriSec1Demo}{fg=white!30!black}
-\begin{beamercolorbox}[wd=\linewidth,ht=6ex,dp=0.7ex]{hriSec1Demo}
-    \textbf{Thank you!}
-
-\end{beamercolorbox}
-        \end{column}
-    \end{columns}
-\end{frame}
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\miniframesoff
-\section[]{Some more stuff}
 \begin{frame}{Some building blocks exists}
 
     \begin{itemize}
@@ -1869,35 +1910,6 @@ Coding scheme for social attitude derives from the Social Communication Coding S
 \end{frame}
 
 
-{
-    \paper{Hostettler, \"Ozg\"ur, Lemaignan et al. {\bf Real-Time High-Accuracy
-    2D Localization with Structured Patterns} -- ICRA 2016}
- \begin{frame}{Interaction with the paper}
-     \badge{ayberk-epfl}
-     Critically, Cellulo is meant as an {\bf interaction between
-     (classroom-friendly) paper and the robots}.
-
-     \pause
-
-     Achieved through a {\bf paper-based absolute localisation system}
-
-     \begin{center}
-         \includegraphics<3>[width=0.8\linewidth]{cellulo/treasure-game-1}
-         \includegraphics<4>[width=\linewidth]{cellulo/treasure-game-2}
-     \end{center}
-
-     \only<5>{
-
-         \begin{itemize}
-             \item even more than 'classroom-friendly', paper is 'teacher-friendly'
-             \item easy to manipulate, copy, print, cutout, dispose...
-             \item unique activity IDs: drop the robots onto the sheet, it
-                 recognizes the activity
-         \end{itemize}
-     }
-
- \end{frame}
-}
 
 \imageframe[caption={Learning-related game actions}, scale=0.9]{sparc/d_eat}
 
